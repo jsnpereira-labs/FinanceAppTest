@@ -13,6 +13,7 @@ import com.google.common.io.Resources;
 import net.bytebuddy.asm.Advice.This;
 
 public class DataProperties {
+	private static String[] attributes = {"username","password","category"};
 	private static String RESOURCE_ADDRESS = "/src/main/resources/";
 	public static Properties getProperties(String address){
 		Properties props = new Properties();
@@ -45,6 +46,15 @@ public class DataProperties {
 	}
 	
 	public static void saveProperties(String address, Properties props){
+		Properties data = getProperties(address);
+		
+		for (int i = 0; i < attributes.length; i++) {
+			
+			if (!props.containsKey(attributes[i])) {
+				props.setProperty(attributes[i], data.getProperty(attributes[i]));
+			}			
+	    }
+		
 		File f;
 		try { 
 			f = getFile(address);

@@ -1,5 +1,8 @@
-*.jar
+*.log
 *.class
-*.lst
+*.war
+*.jar
 chromedriver.exe
 geckodriver.exe
+/target/*
+/target/
