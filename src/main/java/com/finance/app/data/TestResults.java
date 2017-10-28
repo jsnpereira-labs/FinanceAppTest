@@ -19,6 +19,10 @@ public class TestResults {
 		results.add(result);
 	}
 	
+	public static void clearResults() {
+		results.clear();
+	}
+	
 	public static void finalResults() {
 		System.out.println("-----------------------------");
 		System.out.println("RESULTS:");

@@ -51,6 +51,7 @@ public class TC09_IshouldTrackMyExpense extends TestCase {
 		assertEquals("User created the new expense", true, isPass);
 		TestResults.addResult("User created the new expense: "+TestResults.check(isPass));
 		TestResults.finalResults();
+		TestResults.clearResults();
 		System.out.println("=============== End: " + this.getClass().getName() + "======================");
 	}
 

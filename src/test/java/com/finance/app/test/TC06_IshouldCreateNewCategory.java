@@ -41,6 +41,7 @@ public class TC06_IshouldCreateNewCategory extends TestCase {
 		assertEquals("User signed in in the login page", true, isPass);
 		TestResults.addResult("User created new category: "+TestResults.check(isPass));
 		TestResults.finalResults();
+		TestResults.clearResults();
 		financeModule.close();
 		System.out.println("=============== End: " + this.getClass().getName() + "======================");
 	}

@@ -53,6 +53,7 @@ public class TC05_IshouldUpdatePasswordAccount extends TestCase {
 		TestResults.addResult("User signed in in the login page with new password: "+TestResults.check(isPass));
 		
 		TestResults.finalResults();
+		TestResults.clearResults();
 		financeModule.close();
 		System.out.println("=============== End: " + this.getClass().getName() + "======================");
 	}

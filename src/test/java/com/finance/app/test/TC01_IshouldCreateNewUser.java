@@ -38,6 +38,7 @@ public class TC01_IshouldCreateNewUser extends TestCase {
 		assertEquals("It was created a new user", true, isPass);
 		TestResults.addResult("It was created a new user: "+ TestResults.check(isPass));
 		TestResults.finalResults();
+		TestResults.clearResults();
 		financeModule.close();
 		System.out.println("=============== End: "+this.getClass().getName()+"======================");
 		

@@ -36,6 +36,7 @@ public class TC02_IshouldSignInLogin extends TestCase {
 		assertEquals("User signed in in the login page", true, isPass);
 		TestResults.addResult("User signed in in the login page: "+TestResults.check(isPass));
 		TestResults.finalResults();
+		TestResults.clearResults();
 		financeModule.close();
 		System.out.println("=============== End: " + this.getClass().getName() + "======================");
 	}
