@@ -1,6 +1,6 @@
 # FinanceAppTest
 
-This project is wrote for Code assignment in company.
+This project is developed the tests for Code assignment in company.
 
 Requisites 
 I was tested this project and it was working this versions
