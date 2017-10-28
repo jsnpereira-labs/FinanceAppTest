@@ -33,4 +33,4 @@ The downloads were completed, so extract two zip files and move them to resource
 
 From test folders (src/test/java) has test case classes, execute one of the test cases and check the results, also, you can execute AllTest.java to execute all test cases.
 
-Move mouse to AllTests.java and click right button, displays drop down and go to runs menu, you can to see the JUnit test menu and click it to start the tests.
+Move mouse over the AllTests.java and click right button, displays drop down and go to runs menu, you can to see the JUnit test menu and click it to start the tests.
